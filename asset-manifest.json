@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/PokeTaub/static/css/main.cba600ef.css",
+    "main.js": "/PokeTaub/static/js/main.a85276b5.js",
+    "static/js/787.29c06bc8.chunk.js": "/PokeTaub/static/js/787.29c06bc8.chunk.js",
+    "static/media/background.jpeg": "/PokeTaub/static/media/background.97b0511daa9bf8fac94f.jpeg",
+    "index.html": "/PokeTaub/index.html",
+    "main.cba600ef.css.map": "/PokeTaub/static/css/main.cba600ef.css.map",
+    "main.a85276b5.js.map": "/PokeTaub/static/js/main.a85276b5.js.map",
+    "787.29c06bc8.chunk.js.map": "/PokeTaub/static/js/787.29c06bc8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cba600ef.css",
+    "static/js/main.a85276b5.js"
+  ]
+}
