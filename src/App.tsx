@@ -1,24 +1,40 @@
+
 import React from 'react';
-import logo from './logo.svg';
+import {MyPokemon} from './components/Pages/MyPokemonPage/MyPokemon';
 import './App.css';
+import { PokeCharacter } from './types';
+import { PageLayout } from './components/PageLayout';
+
 
 function App() {
+  const [poke_current_character, setPokeCurrentCharacter] = React.useState<PokeCharacter>({id:-1, name:"", moves:[], stats:[],type_url:"",stat_attack:-1,stat_defence:-1});
+  const [poke_characters, setPokeCharacters] = React.useState<PokeCharacter[]>([]);
+  const[poke_oppenent_character,setPokeOpponentCharacter]=React.useState<PokeCharacter>({id: -1, name:"", moves:[], stats:[],type_url:"",stat_attack:-1,stat_defence:-1});
+  const[flag, setFlag] = React.useState<number>(0);
+  const[count_for_id, setCountForId] = React.useState<number>(0);
+  const [page, setPage] = React.useState<number>(0);
+  const changePage = (newPage: number) => {
+    setPage(newPage);   
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="root">
+      
+        <PageLayout 
+          page={page} 
+          pokeCharacter={poke_current_character} 
+          setPokeCurrentCharacter={setPokeCurrentCharacter} 
+          poke_characters={poke_characters}
+          setPokeCharacters={setPokeCharacters}
+          changePage={changePage}
+          poke_oppenent_character={poke_oppenent_character}
+          setPokeOpponentCharacter={setPokeOpponentCharacter}
+          flag={flag}
+          setFlag={setFlag}
+          count_for_id={count_for_id}
+          setCountForId={setCountForId}
+        />
+
     </div>
   );
 }

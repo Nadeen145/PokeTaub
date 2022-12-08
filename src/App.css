@@ -36,3 +36,342 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* Basic ------------------------------------------------------------ */
+
+body{
+  font-family: fantasy;
+  font-size: 1.2em;
+
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  align-content: center;
+
+  color: rgb(25, 84, 124);
+
+  background-image: url('../src/images/background.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h3{
+  font-size: 1.5em;
+  margin: 25px;
+  padding-top: 45% ;
+  color: rgb(140, 15, 15);
+}
+
+h4{
+  font-size: 0.7em;
+  margin: 15px;
+}
+
+
+/* MyPokemon ------------------------------------------------------------ */
+
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  
+  justify-content:space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  width: 50%;
+}
+
+.vertical-line {
+  border-left: 10px solid rgb(255, 255, 255);
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  right: 0%;
+  margin-top: 75px;
+  top: 0;
+}
+
+
+/* PokeCard ------------------------------------------------------------ */
+
+.poke-button{
+  color: transparent;
+  padding: 10px;
+
+  background: rgb(25, 84, 124);
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+
+  border: 1px solid #FFF;
+  border-radius: 10px;
+}
+
+
+/* PokeInfo ------------------------------------------------------------ */
+
+.card-detail{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-detail66{
+  color: #282c34;
+}
+
+.card-detail-features{
+  border-top-left-radius: 250px;
+  padding: 20px;
+  border-top-right-radius: 250px;
+  margin-bottom: -94px;
+  height: 190px;
+  font-size: 0.9em;
+  font-weight: 700;
+  display: flex;
+  background-color: rgb(140, 15, 15);
+  justify-content: space-between;
+}
+
+.card-detail-featuresRight,
+.card-detail-featuresLeft{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.card-detail-features span{
+  background-color: white;
+  border-radius: 5px;
+  padding: 7px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+
+.card-detail-description{
+  padding: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-detail-descriptionImage{
+  display: block;
+  width: 30%;
+  margin-bottom: -10px;
+  border-radius: 50%;
+  border: 5px solid black;
+  background-color: rgb(247, 242, 242);
+}
+
+.card-detail-descriptionName{
+  font-size: 2em;
+  text-transform: capitalize;
+}
+
+
+.card-detail-other{
+  display: flex;
+  padding: 5px;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card-detail-otherStats{
+  width: 75%;
+  margin-top: -50px;
+}
+
+.card-detail-otherStatsTitle{
+  text-align: left;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: rgb(113, 87, 87);
+}
+
+.card-detail-otherStatContent{
+  font-size: 1.1em;
+  padding: 3px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-detail-otherStatTimeLine{
+  background-color: rgb(78, 53, 53);
+  width: 100%;
+  height: 0.4em;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.card-detail-otherStatTimeLineStat{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: inherit;
+  border-radius: 5px;
+  background-color: black;
+  z-index: 10;
+}
+
+
+.choose-poke-button{
+  padding: 10px;
+
+  background: rgb(25, 84, 124);
+  padding: 10px;
+  width: fit-content;
+  height: 100px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+
+  align-self: center;
+
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: fantasy;
+
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.choose-poke-button:hover {
+  background-color:  #0f8bad;
+  color: white;
+}
+
+
+/* Battle ------------------------------------------------------------ */
+
+.moves{
+  background-color: rgb(140, 15, 15);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 3px 50px 50px 50px;
+}
+
+.result{
+  text-align: center;
+  background-color: wheat;
+  border-radius: 10px;
+  padding: 50px;
+  margin: 100px;
+}
+
+.text{
+  font-size: 1.2em;
+  margin: 25px;
+  font-weight: 900;
+  color: rgb(140, 15, 15);
+}
+
+
+/* Moves Pages ------------------------------------------------------------ */
+
+.flex-container-moves {
+  display: flex;
+  flex-flow: row wrap;
+  
+  justify-content:space-around;
+  
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-container-profile {
+  display: flex;
+  flex-flow: row wrap;
+  
+  justify-content:space-around;
+  
+  padding: 10px;
+  margin: 0;
+  list-style: none;
+}
+
+.move-button{
+  padding: 10px;
+
+  background: transparent;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+
+  align-self: center;
+
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: fantasy;
+
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.move-button:hover {
+  background-color:  #0f8bad;
+  color: white;
+}
+.move-opp-button{
+  
+    padding: 10px;
+  
+    background: transparent;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+  
+    align-self: center;
+  
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: fantasy;
+  
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+  }
+
+  .move-opp-button:hover {
+    background-color:  rgb(140, 15, 15);
+    color: white;
+  }
+  
+  .container-text{
+    font-size: 1.2em;
+    margin: 25px;
+    font-weight: 900;
+    color: white;
+    align-content: center;
+    padding: auto;
+  }
+
+
+/* Poke Icon ------------------------------------------------------------ */
+
+.icon-text{
+  font-size: 1em;
+  margin: 25px;
+  font-weight: 900;
+  color: black;
+}
+
+
